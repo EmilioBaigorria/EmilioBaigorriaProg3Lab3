@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tp 1 HTML</title>
+    <style>
+        table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th,td{
+            border: 1px solid orange;
+            padding: 8px;
+            text-align: center;
+        }
+        tfoot{
+            background-color: rgba(184, 135, 11, 0.568);
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1 id="1">1.Estructura Basica HTML</h1>
+        <h3>Este documento contiene una estructura basica html</h3>
+    </div>
+    <div>
+        <h1 id="2">2.Encabezados y propiedades del texto</h1>
+        <h3><b>Texto en negrita</b></h3>
+        <h3><em>Este texto esta en cursiva</em></h3>
+        <h3><u>Este texto esta subrayado</u></h3>
+        <h3><i>Este texto esta en italica</i></h3>
+    </div>
+    <div>
+        <h1 id="3">3.Divisores y Agrupacion de Contenido</h1>
+        <div>
+            <h2><b>Seccion 1</b></h2>
+            <h3>El contenido de estas seccion esta separado de la seccion 2</h3>
+        </div>
+        <div>
+            <h2><b>Seccion 2</b></h2>
+            <h3>El contenido de estas seccion esta separado de la seccion 1</h3>
+        </div>
+    </div>
+    <div>
+        <h1>4.Enlaces y Listas</h1>
+        <nav>
+            <div>
+                <h2>Enlace Externo</h2>
+                <a href="https://www.google.com" target="_blank">Google</a>
+            </div>
+            <div>
+                <h2>Enlaces Internos</h2>
+                <a href="#1">Ir a Estructura Basica HTML</a><br>
+                <a href="#2">Ir a Encabezados y propiedades del texto</a><br>
+                <a href="#3">Ir a Divisores y Agrupacion de Contenido</a>
+            </div>
+        </nav>
+        
+        <div>
+            <h2>Lista Ordenada</h2>
+            <ol>
+                <li>Elemento de lista ordenada 1</li>
+                <li>Elemento de lista ordenada 2</li>
+                <li>Elemento de lista ordenada 3</li>
+                <li>Elemento de lista ordenada 4</li>
+            </ol>
+        </div>
+        <div>
+            <h2>Lista Desordenada</h2>
+            <ul>
+                <li>Elemento de lista desordenada 1</li>
+                <li>Elemento de lista desordenada 2</li>
+                <li>Elemento de lista desordenada 3</li>
+                <li>Elemento de lista desordenada 4</li>
+            </ul>
+        </div>
+    </div>
+    <div>
+        <h1>5.Elementos Multimedia</h1>
+        <div>
+            <h2>Imagen</h2>
+            <img src="https://www.adslzone.net/app/uploads-adslzone.net/2019/04/borrar-fondo-imagen-930x487.jpg" alt="Imagen de Mario"
+            width="240px"
+            height="160px">
+        </div>
+        <div>
+            <h2>Video</h2>
+            <video src="https://video-previews.elements.envatousercontent.com/5b3b6876-9689-4cfe-9692-1cf061a156f6/watermarked_preview/watermarked_preview.mp4"
+            autoplay
+            controls
+            width="240"
+            height="160"></video>
+        </div>
+        <div>
+            <h2>Audio</h2>
+            <audio src="https://download.blender.org/peach/trailer/trailer_1080p.ogg"
+            controls></audio>
+        </div>
+    </div>
+    <div>
+        <h1>6.Tablas</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Columna 1</th>
+                    <th>Columna 2</th>
+                    <th>Columna 3</th>
+                    <th>Columna 4</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Dato 1.1</td>
+                    <td>Dato 2.1</td>
+                    <td>Dato 3.1</td>
+                    <td>Dato 4.1</td>
+                </tr>
+                <tr>
+                    <td>Dato 1.2</td>
+                    <td>Dato 2.2</td>
+                    <td>Dato 3.2</td>
+                    <td>Dato 4.2</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Total 1</td>
+                    <td>Total 2</td>
+                    <td>Total 3</td>
+                    <td>Total 4</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <div>
+        <h1>7.Formulario</h1>
+        <form>
+            <div><label>Email:</label>
+                <input type="email" placeholder="example@gmail.com">
+            </div><br>
+            <div>
+                <label>Nombre:</label>
+                <input type="text" placeholder="Tu nombre">
+            </div><br>
+            <div>
+                <label>Apellido:</label>
+                <input type="text" placeholder="Tu apellido">
+            </div><br>
+            <div>
+                <label>Edad:</label>
+                <input type="number" placeholder="Tu edad">
+            </div><br>
+            <div>
+                <label for="txtarea">¡Enviame un mensaje!</label><br>
+                <textarea name="txtarea" id="98"></textarea>
+            </div>
+            <div>
+                <button type="submit">Enviar</button>
+                <button type="reset">Borrar</button>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>
